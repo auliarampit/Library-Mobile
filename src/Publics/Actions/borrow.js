@@ -5,7 +5,7 @@ export const postPinjam = (data) => {
     
     return {
         type: 'POST_PINJAM',
-        payload: axios.post(`https://library-backend-ar.herokuapp.com/Pinjam/post`,data),
+        payload: axios.post(`https://192.168.6.199:8082/Pinjam/post`,data),
     }
 }
 
@@ -14,6 +14,6 @@ export const patchPinjam = ( idBook) => {
 
     return {
         type: 'UPDATE_PINJAM',
-        payload: axios.patch(`https://library-backend-ar.herokuapp.com/Pinjam/${idBook}`,)
+        payload: axios.patch(`https://192.168.6.199:8082/Pinjam/${idBook}`,)
     }
 }
